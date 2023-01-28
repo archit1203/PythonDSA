@@ -1,0 +1,48 @@
+What is DS?
+    It is a way to store and organize data efficiently
+
+Need of DS
+    Data structures make it easy for users to access and 
+    work with the data they need in appropriate ways. 
+    Most importantly, data structures frame the organization 
+    of information so that machines and humans can better understand it.
+
+Linear & Non-Linear DS
+    Way to store and organize data
+    Linear  
+        Array, LL, Stack, Queue, Hash
+    Non-Linear  
+        Tree, Graph
+
+Arrays
+    Linear DS
+    Store mutliple data of same type
+    In contiguous memory locations
+    Cons:
+        Fixed size
+            Memory wastage
+        Homogenous
+            Lack of Flexibility , only one type of data
+    
+    Normal Arrays
+        Arr = |1|2|3|4|5|
+
+    Refrential Array
+        |1|     |2|     |Hello|     |4|
+        201     301     406         505
+
+        Arr = |201|301|406|505|
+
+        Can store hetrogeneuos type of data
+        Slow speed
+        Extra Memory
+
+    (IMP) Dynamic Arrays
+        Adjusts as per requirement
+        Its a concept using ArraysPython Lists
+
+        1->     |1|
+        2->     |1|2|
+        3->     |1|2|3| |
+        4->     |1|2|3|4|
+        5->     |1|2|3|4|5| | | |

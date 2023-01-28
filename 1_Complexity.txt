@@ -1,0 +1,11 @@
+Algorithmic Complexity
+    How efficient is your algorithm
+
+What is efficiency in Algos?
+    Time: Which algo is able to solve same problem fastly
+    Space: Which algo is able to solve same problem in lesser space
+
+ctypes
+    ctypes is a foreign function library for Python. It provides C compatible
+    data types, and allows calling functions in DLLs or shared libraries. It 
+    can be used to wrap these libraries in pure Python.
