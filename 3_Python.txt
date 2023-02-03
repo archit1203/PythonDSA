@@ -1,0 +1,16 @@
+PYTHON
+    It is an interpreted language
+    OOP language
+    Dynamically typed
+
+VARIABLES 
+    Name given to memory locations
+    Start only with charecter or underscore
+    can have charecter/underscore/numbers
+
+DATATYPES
+    integer
+    string
+    float
+    double
+    
