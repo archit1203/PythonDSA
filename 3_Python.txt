@@ -13,4 +13,9 @@ DATATYPES
     string
     float
     double
-    
+
+OPERATORS
+    ARITHMETIC
+        + , - , * , / , %
+        // -> floor division, integer as answer
+        ** -> exponential
