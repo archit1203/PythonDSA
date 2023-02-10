@@ -19,3 +19,34 @@ OPERATORS
         + , - , * , / , %
         // -> floor division, integer as answer
         ** -> exponential
+
+DATA STRUCTURES
+    These are the fundamental of computer science which helps in writing an
+     efficient program in a language.
+    It is a way of organising data so that it can be accessed more efficiently
+
+DS TYPES
+    1. Linear DS    
+        a. Arrays
+        b. Linked List
+        c. Stack
+        d. Queue
+        e. Matrix
+    2. Non-Linear DS
+        a. Binary Tree
+        b. Heap 
+        c. Hash table
+        d. Graph
+
+PYTHON SPECIFIC DS TYPES
+    1. Built-in
+        a. List
+        b. Tuple
+        c. Dictionary
+        d. Set 
+    2. User defined
+        a. Stack
+        b. Linked List
+        c. Queue
+        d. Tree
+        e. Graphs

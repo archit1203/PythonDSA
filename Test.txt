@@ -12,4 +12,8 @@ xheck not again check
 check check check 
 check 1 2 check 
 checking check check
+<<<<<<< HEAD
 check
+=======
+check
+>>>>>>> f9e13b7ca4643e13fdf8024ddb4e4efc660a271d
