@@ -35,7 +35,7 @@
 - Represents the **exact bound** (both upper and lower bound).
 - Used when the growth rate of the algorithm is known precisely.
 - Example: \(3n^3 + 6n^2 + 6000 = Θ(n^3)\)
----
+--- 
 ### 2. Big-O Notation — O(g(n))
 - Represents the **upper bound** (worst-case complexity).
 - Most commonly used notation.
