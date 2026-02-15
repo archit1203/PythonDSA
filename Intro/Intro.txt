@@ -1,0 +1,18 @@
+<h1>Introduction</h1>
+
+<h2>Why DSA?</h2>
+<ul>
+  <li>Become a better <b>Software Developer</b></li>
+  <li>Gain <b>better understanding</b> of problem solving</li>
+  <li>Foundation for the <b>sport of Competitive Programming (CP)</b></li>
+</ul>
+
+<hr>
+
+<h2>Roadmap (Python DSA)</h2>
+<ol>
+  <li>Choose a Language</li>
+  <li>Learn basics and implement programs</li>
+  <li>Learn language libraries that already implement DSA for you</li>
+  <li>Practice and excel</li>
+</ol>
