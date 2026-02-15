@@ -15,9 +15,8 @@ This repository follows a **step-by-step learning roadmap**, helping you build s
 
 ---
 
-## 📊 GitHub Stats
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=archit1203&theme=tokyo-night)
-
+## 📊 Roadmap
+[ [Beginner Python] -> [Intro] -> ]
 ---
 
 ## ⭐ Support
