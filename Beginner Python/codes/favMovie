@@ -1,0 +1,8 @@
+#WAP to ask user to enter their 3 fav movies and store them in a list
+movies=[]
+print("Enter your 3 fav movies")
+for i in range(3):
+    a=input("Enter %dth fav movie: " % (i+1))
+    movies.append(a)
+
+print(movies)
