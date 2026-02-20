@@ -100,3 +100,6 @@ Signed Magnitude → Simple but has two zeros.
 1’s Complement → Still has two zeros.
 
 2’s Complement → Most efficient and widely used method.
+
+
+-2s Complement direct Formula: [2^n - x]
