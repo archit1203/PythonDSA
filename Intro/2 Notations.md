@@ -1,7 +1,7 @@
 # Big-O Notation
 
 ### What is Big-O?
-- **Big-O notation** describes the **upper bound (worst-case)** time or space complexity of an algorithm.
+- **Big-O notation** describes the **upper bound ( worst-case )** time or space complexity of an algorithm.
 - It represents the **asymptotic growth rate**, not the exact running time.
 - Helps compare the efficiency of different algorithms independent of hardware.
 
