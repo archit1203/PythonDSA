@@ -5,4 +5,4 @@
 - Essential foundation for **Competitive Programming (CP)**
 ---
 ## Roadmap (Python DSA)
-`[ Choose a Language(Py) ] → [ Learn Basics & Implement ] → [ Learn Built-in DSA Libraries ] → [ Practice Consistently & Excel! ]`
+`[ Choose a Language(Python) ] → [ Learn Basics & Implement ] → [ Learn Built-in DSA Libraries ] → [ Practice Consistently & Excel! ]`
