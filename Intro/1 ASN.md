@@ -1,12 +1,12 @@
 # Introduction to Analysis of Algorithms
-## What is Algorithm Analysis?
+## What is Algorithm Analysis ?
 - **Algorithm analysis** is the process of evaluating the performance of an algorithm.
 - It helps us understand how efficiently an algorithm uses **time** and **memory**.
 - The goal is to compare different algorithms and choose the **most efficient solution** for a problem.
 ## Why Do We Analyze Algorithms?
 - To predict **performance before implementation**
 - To select the **best approach** among multiple solutions
-- To design **scalable programs** that work efficiently even for large inputs
+- To design **scalable programs** that work efficiently even for large inputs.
 ## Key Focus Areas
 - **Time Complexity** – How execution time grows with input size
 - **Space Complexity** – How memory usage grows with input size
