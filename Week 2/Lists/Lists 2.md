@@ -9,7 +9,7 @@ Tuple slicing allows you to extract a **sub-part of a tuple** using index ranges
 
 ## Syntax
 
-#####tuple[start : stop : step]
+##### tuple[start : stop : step]
 
 start → starting index (inclusive), default = 0
 
