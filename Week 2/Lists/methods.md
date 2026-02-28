@@ -36,3 +36,9 @@ Removes the item of particular index from list.
 
 # Slicing
 > L [ start : stop : step ]
+
+# Comprehension
+```
+l1 = [x for x in range(11) if x%2==0] #evenno
+l2 = [x for x in range(11) if x%2!=0] #odd
+```
