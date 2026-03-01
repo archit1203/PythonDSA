@@ -1,4 +1,4 @@
-# List ethods
+# List Methods
 **append(x)**  
 Inserts `x` at the end of the list.
 
