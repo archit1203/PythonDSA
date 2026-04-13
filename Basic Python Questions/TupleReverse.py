@@ -9,4 +9,4 @@ for x in reversed(t):
     li.append(x)
 
 li=tuple(li)
-print(li,type(li))
+print(li,type(li)) 
