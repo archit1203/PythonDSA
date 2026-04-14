@@ -17,6 +17,29 @@ class myList:
         return (capacity*ctypes.py_object)()
     
     #APPEND LIST
+    def append(self,item):
+        if self.n==self.size:
+            #resize
+            self.__resize(self.size*2)
+
+        #append
+        self.A[self.n]=item
+        self.n+=1
+    
+    def __resize(self,new_cap):
+        #new array with new capacity
+        B = self.__makeArray(new_cap)
+        self.size=new_cap
+
+        #copy A to B
+        for i in range(self.n):
+            B[i]=self.A[i]
+        
+        #reasssign A
+        self.A=B
+        
+
+
 
     
 
