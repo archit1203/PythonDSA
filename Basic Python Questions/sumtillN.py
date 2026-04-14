@@ -5,4 +5,4 @@ def sum(x):
     return sum
 
 n=int(input("Enter: "))
-print("SUM is : ",sum(n))
+print("SUM is : ",sum(n))   
