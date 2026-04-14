@@ -6,6 +6,9 @@ class myList:
         self.n=0
         #create a c type array with size=self.size
         self.A=self.__makeArray(self.size)
+    
+    def __len__(self):
+        return self.n
 
     def __makeArray(self,capacity):
         #creates a ctype static refrential array with size capacity
@@ -14,4 +17,5 @@ class myList:
 
 L=myList()
 print(L,type(L))
+print(len(L))
     
