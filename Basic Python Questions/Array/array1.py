@@ -37,7 +37,14 @@ class myList:
         
         #reasssign A
         self.A=B
+    
+    #PRINT
+    def __str__(self):
+        res=''
+        for i in range(self.n):
+            res= res + str(self.A[i]) + ','
         
+        return '[' + res + ']'
 
 
 
