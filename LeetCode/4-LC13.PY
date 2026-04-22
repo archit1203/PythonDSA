@@ -12,4 +12,4 @@ for i in range(len(s)):
     else:
         val=val+temp
 print(val)
-
+ 
