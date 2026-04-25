@@ -60,16 +60,28 @@ def delLast(head):
         temp=temp.next
     temp.next=None
     return head
+
+def search(head,k):
+    if head==None:
+        return -1
+    temp=head
+    pos=0
+    while temp!=None:
+        if temp.key==k:
+            return pos
+        pos=pos+1
+        temp=temp.next
+    return -1
     
 
 
 
 head=Node(0)
-head.next=Node(1)
-head.next.next=Node(2)
+head.next=Node(10)
+head.next.next=Node(20)
 
-head=insertBegin(head,3)
-head=insertEnd(head,4)
+head=insertBegin(head,30)
+head=insertEnd(head,40)
 head=insertAtPosition(head,'Mid',4)
 printList(head)
 
@@ -79,4 +91,8 @@ printList(head)
 head=delLast(head)
 printList(head)
 
+pos=search(head,30)
+print(pos)
+pos=search(head,20)
+print(pos)
 
