@@ -62,10 +62,9 @@ def delLast(head):
     return head
 
 def search(head,k):
-    if head==None:
-        return -1
+    #TC = O(n) SC = O(1)
     temp=head
-    pos=0
+    pos=1
     while temp!=None:
         if temp.key==k:
             return pos
@@ -93,6 +92,6 @@ printList(head)
 
 pos=search(head,30)
 print(pos)
-pos=search(head,20)
+pos=search(None,20)
 print(pos)
 
