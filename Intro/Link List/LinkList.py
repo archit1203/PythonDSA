@@ -18,7 +18,7 @@ def insertBegin(head,k):
     return temp
 
 def insertEnd(head,k):
-    #Traversal: TC = theta(n) ; SC = O(1)
+    #Insert $ End: TC = theta(n) ; SC = O(1)
     if head==None:
         return Node(k) 
     curr=head
@@ -27,15 +27,38 @@ def insertEnd(head,k):
     curr.next=Node(k)
     return head
     
-def insertAtPosition(head,key,pos):
-    pass
+def insertAtPosition(head,k,pos):
+    #Insert @ Position: TC= theta(min(pos,n))
+    temp=Node(k)
+    if pos==1:
+        temp.next=head
+        return temp
+    curr=head
+    for i in range(pos-2):
+        curr=curr.next
+        if curr==None:
+            return head
+    temp.next=curr.next
+    curr.next=temp
+    return head
 
-head=Node(10)
-head.next=Node(20)
-head.next.next=Node(30)
 
-head=insertBegin(head,5)
-head=insertEnd(head,14)
+def delFirst(head):
+    head=head.next
+    return head
+
+
+
+head=Node(0)
+head.next=Node(1)
+head.next.next=Node(2)
+
+head=insertBegin(head,3)
+head=insertEnd(head,4)
+head=insertAtPosition(head,'Mid',4)
+printList(head)
+
+head=delFirst(head)
 printList(head)
 
 
