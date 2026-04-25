@@ -12,7 +12,7 @@ def printList(head):
     print("Null")
     
 def insertBegin(head,k):
-    #Traversal: TC = O(1) ; SC = O(1)
+    #Insert @ Begin: TC = O(1) ; SC = O(1)
     temp=Node(k)
     temp.next=head
     return temp
