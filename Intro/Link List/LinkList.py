@@ -44,8 +44,23 @@ def insertAtPosition(head,k,pos):
 
 
 def delFirst(head):
-    head=head.next
+    #Del @ Head: TC: O(1)
+    if head==None:
+        return None
+    else:
+        return head.next
+
+def delLast(head):
+    if head==None:
+        return None
+    if head.next==None:
+        return None
+    temp=head
+    while temp.next.next!=None: #2nd Last Node
+        temp=temp.next
+    temp.next=None
     return head
+    
 
 
 
@@ -59,6 +74,9 @@ head=insertAtPosition(head,'Mid',4)
 printList(head)
 
 head=delFirst(head)
+printList(head)
+
+head=delLast(head)
 printList(head)
 
 
