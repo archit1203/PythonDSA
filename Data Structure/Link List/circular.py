@@ -9,10 +9,13 @@ class Node:
 
 def printList(head):
     #Traversal: TC = theta(n) ; SC = O(1)
-    temp=head
-    while temp!=None:
-        print(temp.key,end=" -> ")
-        temp=temp.next
+    if head==None:
+        return
+    print(head.key,end=" -> ")
+    curr=head.next
+    while curr!=head:
+        print(curr.key,end=" -> ")
+        curr=curr.next
     print("Null")        
 
 
