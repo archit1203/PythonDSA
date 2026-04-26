@@ -47,6 +47,7 @@ def insertEnd(head,k):
     return head
     
 def reverse(head):
+    #TC=theta(n)
     if head==None:
         return None
     if head.next==None:
@@ -85,6 +86,27 @@ def reverse(head):
     return prev
 '''
 
+def delHead(head):
+    #TC = O(1)
+    if head==None or head.next==None:
+        return None
+    head=head.next
+    head.prev=None
+    return head
+
+def delLast(head):
+    if head==None:
+        return None
+    if head.next==None:
+        return None
+    curr=head
+    while curr.next.next!=None:
+        curr=curr.next
+    curr.next=None
+    return head
+
+
+
 head=Node(10)
 t1=Node(20)
 t2=Node(30)
@@ -104,7 +126,16 @@ head = insertEnd(head,100)
 print("Insert End: ",end='')
 printList(head)
 
-
+'''
 head=reverse(head)
 print("Reverse List: ",end='')
+printList(head)
+
+head=delHead(head)
+print("Delete Head: ",end='')
+printList(head)
+'''
+
+head=delLast(head)
+print("Delete Last: ",end='')
 printList(head)
