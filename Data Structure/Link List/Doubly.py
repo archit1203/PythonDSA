@@ -46,6 +46,44 @@ def insertEnd(head,k):
     curr.next=temp
     return head
     
+def reverse(head):
+    if head==None:
+        return None
+    if head.next==None:
+        return head
+    temp=head
+    pre=None
+    
+    curr=None
+    nex=None
+
+    while temp!=None:
+        curr=temp
+        nex=temp.next
+        temp.next=pre
+        temp.prev=nex
+        pre=temp
+        temp=nex
+    return pre
+
+'''
+def reverse(head):
+    if head==None:
+        return None
+    if head.next==None:
+        return head
+    temp=head
+    pre=None
+
+    curr=None
+    nex=None
+
+    while temp.next!=None:
+        pre=temp
+        temp.next,temp.prev=temp.prev,temp.next
+        temp=temp.prev
+    return prev
+'''
 
 head=Node(10)
 t1=Node(20)
@@ -64,4 +102,9 @@ printList(head)
 
 head = insertEnd(head,100)
 print("Insert End: ",end='')
+printList(head)
+
+
+head=reverse(head)
+print("Reverse List: ",end='')
 printList(head)
