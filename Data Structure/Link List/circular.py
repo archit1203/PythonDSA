@@ -13,7 +13,7 @@ def printList(head):
     while temp!=None:
         print(temp.key,end=" -> ")
         temp=temp.next
-    print("Null")
+    print("Null")        
 
 
 
