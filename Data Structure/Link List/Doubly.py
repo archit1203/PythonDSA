@@ -27,14 +27,25 @@ def printList(head):
     print("Null")
 
 def insertBegin(head,k):
-    if head==None:
-        return Node(k)
+    #TC = O(1)
     temp=Node(k)
+    if head==None:
+        return temp
     head.prev=temp
     temp.next=head
-
     return temp
 
+def insertEnd(head,k):
+    temp=Node(k)
+    if head==None:
+        return temp
+    curr=head
+    while curr.next!=None:
+        curr=curr.next
+    temp.prev=curr
+    curr.next=temp
+    return head
+    
 
 head=Node(10)
 t1=Node(20)
@@ -44,7 +55,13 @@ head.next=t1
 t1.prev=head 
 t1.next=t2
 t2.prev=t1
+print("List 1: ",end='')
 printList(head)
 
 head = insertBegin(head,5)
+print("Insert Begin: ",end='')
+printList(head)
+
+head = insertEnd(head,100)
+print("Insert End: ",end='')
 printList(head)
