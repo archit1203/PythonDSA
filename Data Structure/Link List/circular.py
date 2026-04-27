@@ -62,9 +62,18 @@ def insertEndOptimal(head,k):
         temp.next=temp
         return temp
     temp.next=head.next
-    head.next=temp
+    head.next=temp   
     head.key,temp.key=temp.key,head.key
     return temp
+
+def delHead(head):
+    if head==None:
+        return None
+    if head.next==head:
+        return None
+    head.key=head.next.key
+    head.next=head.next.next
+    return head
 
 
 head=Node(10)
@@ -79,13 +88,21 @@ print("CLL: ",end="")
 printList(head)
 
 head=insertBegin(head,0)
-print("Insert Begin 1: ",end="")
+print("Insert Begin: ",end="")
 printList(head)
 
-head=insertBeginOptimal(head,-10)
-print("Insert Begin 2: ",end="")
-printList(head)
+#head=insertBeginOptimal(head,-10)
+#print("Insert Begin 2: ",end="")
+#printList(head)
+
+#head=insertEnd(head,100)
+#print("Insert End: ",end="")
+#printList(head)
 
 head=insertEndOptimal(head,100)
 print("Insert End: ",end="")
+printList(head)
+
+head=delHead(head)
+print("Delete Head: ",end="")
 printList(head)
