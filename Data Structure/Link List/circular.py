@@ -19,14 +19,51 @@ def printList(head):
     print("Null")      
 
 def insertBegin(head,k):
+    #TC = theta(n)
     temp=Node(k)
     if head==None:
+        temp.next=temp
         return temp
-    temp.next=head
     curr=head.next
     while curr.next!=head:
         curr=curr.next  
     curr.next=temp
+    temp.next=head
+    return temp
+
+def insertBeginOptimal(head,k):
+    #TC = O(1)
+    temp=Node(k)
+    if head==None:
+        temp.next=temp
+        return temp
+    temp.next=head.next
+    head.next=temp
+    head.key,temp.key=temp.key,head.key
+    return head
+
+def insertEnd(head,k):
+    #TC = theta(n)
+    temp=Node(k)
+    if head==None:
+        temp.next=temp
+        return temp
+    curr=head.next
+    while curr.next!=head:
+        curr=curr.next
+    curr.next=temp
+    temp.next=head
+    return head
+
+def insertEndOptimal(head,k):
+    #TC = theta(n)
+    temp=Node(k)
+    if head==None:
+        temp.next=temp
+        return temp
+    temp.next=head.next
+    head.next=temp
+    head.key,temp.key=temp.key,head.key
     return temp
 
 
@@ -41,6 +78,14 @@ t2.next=head
 print("CLL: ",end="")
 printList(head)
 
-head=insertBegin(head,-1)
-print("CLL: ",end="")
+head=insertBegin(head,0)
+print("Insert Begin 1: ",end="")
+printList(head)
+
+head=insertBeginOptimal(head,-10)
+print("Insert Begin 2: ",end="")
+printList(head)
+
+head=insertEndOptimal(head,100)
+print("Insert End: ",end="")
 printList(head)
