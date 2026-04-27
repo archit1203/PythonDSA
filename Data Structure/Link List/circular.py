@@ -16,8 +16,18 @@ def printList(head):
     while curr!=head:
         print(curr.key,end=" -> ")
         curr=curr.next
-    print("Null")        
+    print("Null")      
 
+def insertBegin(head,k):
+    temp=Node(k)
+    if head==None:
+        return temp
+    temp.next=head
+    curr=head.next
+    while curr.next!=head:
+        curr=curr.next  
+    curr.next=temp
+    return temp
 
 
 head=Node(10)
@@ -28,5 +38,9 @@ head.next=t1
 t1.next=t2
 t2.next=head
 
+print("CLL: ",end="")
+printList(head)
+
+head=insertBegin(head,-1)
 print("CLL: ",end="")
 printList(head)

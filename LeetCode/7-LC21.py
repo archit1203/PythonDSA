@@ -16,7 +16,7 @@ class Solution:
         elif list2==None:
                 return list1
 
-        l1=list1
+        l1=list1   
         l2=list2
         l3=head
         
