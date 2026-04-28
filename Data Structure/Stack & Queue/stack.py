@@ -1,3 +1,16 @@
+"""
+Stack:  It is a linear DS
+        Items can be added or removed at one end only
+        It follows LIFO
+
+Applications: 1. Recursion
+              2. Expression Evaluation
+              3. Browser
+              4. Problem solving
+
+"""
+
+
 import math
 
 class Node:

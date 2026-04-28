@@ -7,10 +7,12 @@ class Solution:
         for i in range(len(s)):
             if s[i] in opn:
                 stack.append(s[i])
-                #top=top+1
             if s[i] in close:
                 if not stack:
                     return False
+            #if s[i] in close:
+            #    if not stack:
+            #        return False
 
                 match s[i]:
                     case "}":
