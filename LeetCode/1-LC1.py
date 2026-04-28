@@ -23,7 +23,7 @@ Better => Sorting & Binary Seach nlogn
 
 Optimal => 
 """
-def twoSum(self, nums: List[int], target: int) -> List[int]:
+def twoSum(self, nums, target):
         d=dict()
         for i in range(len(nums)):
             d[nums[i]]=i
