@@ -1,0 +1,64 @@
+**Short Notes on Python Decision-Making Statements**
+
+1. **`if` Statement**:  
+   - Tests a condition and executes code if true.
+   - Syntax:
+     ```python
+     if condition:
+         # code
+     ```
+
+2. **`if-else` Statement**:  
+   - Executes one block if the condition is true, another if false.
+   - Syntax:
+     ```python
+     if condition:
+         # code
+     else:
+         # code
+     ```
+
+3. **`if-elif-else` Statement**:  
+   - Checks multiple conditions. Executes the first true block.
+   - Syntax:
+     ```python
+     if condition1:
+         # code
+     elif condition2:
+         # code
+     else:
+         # code
+     ```
+
+4. **Nested `if` Statements**:  
+   - `if` inside another `if` statement.
+   - Syntax:
+     ```python
+     if condition1:
+         if condition2:
+             # code
+     ```
+
+5. **Ternary Operator**:  
+   - Short form of `if-else`.
+   - Syntax:
+     ```python
+     value = true_value if condition else false_value
+     ```
+
+6. **`pass` Statement**:  
+   - Placeholder; does nothing.
+   - Syntax:
+     ```python
+     if condition:
+         pass
+     ```
+
+7. **Comparison Operators**:  
+   - `==`, `!=`, `>`, `<`, `>=`, `<=`
+
+8. **Logical Operators**:  
+   - `and`, `or`, `not`
+
+9. **Indentation**:  
+   - Python uses indentation (typically 4 spaces) to define blocks of code.

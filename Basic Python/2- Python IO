@@ -1,0 +1,61 @@
+### Basic I/O in Python
+
+- **print() Function**:  
+  - Used to print messages or objects to the screen. The objects are automatically converted to strings before being displayed.
+  - Syntax: `print(object(s), sep=separator, end=end, file=file, flush=flush)`
+
+**Examples**:
+```python
+print("Hello World")  # Output: Hello World
+print("Codingninjas is best for DSA Content.")  # Output: Codingninjas is best for DSA Content.
+print("Hello", "how are you?")  # Output: Hello how are you?
+```
+
+- **The `end` Parameter**:  
+  - By default, `print()` ends with a newline (`\n`), but you can change this using the `end` parameter.
+  
+**Examples**:
+```python
+print("Welcome", end=' ') 
+print("CodingNinjas", end=' ')  # Output: Welcome CodingNinjas
+```
+
+- **The `sep` Parameter**:  
+  - The `sep` parameter changes the separator between the printed objects (default is a space).
+  
+**Examples**:
+```python
+print('CodingNinjas', sep='')  # Output: CodingNinjas
+print('01', '01', '2021', sep='-')  # Output: 01-01-2021
+print('saif', 'codingninjas', sep='@')  # Output: saif@codingninjas
+```
+
+
+### `input()` Function Summary
+
+- **Purpose**: Used to take input from the user. The input is always returned as a string.
+- **Typecasting**: To convert input to other data types (e.g., `int()`), you need to manually typecast.
+  
+  **Example**:
+  ```python
+  num = int(input("Enter number: "))
+  print(num)  # Converts input to integer
+  ```
+
+- **Space-Separated Input**: Use `split()` to take multiple values in one line.
+  
+  **Example**:
+  ```python
+  x, y = input().split()
+  print(x, y)  # x and y are strings by default
+  ```
+
+- **Addition of Two Numbers**:
+  ```python
+  a = int(input("Enter value of a: "))
+  b = int(input("Enter value of b: "))
+  c = a + b
+  print("value of c is:", c)
+  ```
+
+- **Note**: The input is always returned as a string, so explicit type conversion is required if numeric operations are needed.

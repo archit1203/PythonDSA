@@ -1,0 +1,71 @@
+**Short Notes on Python Operators**
+
+1. **Arithmetic Operators**: Used for basic math operations.
+   - `+` (Addition)
+   - `-` (Subtraction)
+   - `*` (Multiplication)
+   - `/` (Division)
+   - `//` (Floor Division)
+   - `%` (Modulus)
+   - `**` (Exponentiation)
+
+2. **Assignment Operators**: Used to assign values to variables.
+   - `=` (Assign value)
+   - `+=` (Add and assign)
+   - `-=` (Subtract and assign)
+   - `*=` (Multiply and assign)
+   - `/=` (Divide and assign)
+   - `//=` (Floor divide and assign)
+   - `%=` (Modulus and assign)
+   - `**=` (Exponentiate and assign)
+
+3. **Comparison Operators**: Used to compare values.
+   - `==` (Equal to)
+   - `!=` (Not equal to)
+   - `>` (Greater than)
+   - `<` (Less than)
+   - `>=` (Greater than or equal to)
+   - `<=` (Less than or equal to)
+
+4. **Logical Operators**: Used to combine conditional statements.
+   - `and` (True if both conditions are true)
+   - `or` (True if at least one condition is true)
+   - `not` (Inverts the condition)
+
+5. **Identity Operators**: Used to compare objects' memory locations.
+   - `is` (True if both refer to the same object)
+   - `is not` (True if both do not refer to the same object)
+
+6. **Membership Operators**: Used to check if a value is in a sequence (list, tuple, etc.).
+   - `in` (True if value is found in the sequence)
+   - `not in` (True if value is not found in the sequence)
+
+7. **Bitwise Operators**: Used to perform operations on binary values.
+   - `&` (AND)
+   - `|` (OR)
+   - `^` (XOR)
+   - `~` (NOT)
+   - `<<` (Left shift)
+   - `>>` (Right shift)
+
+
+| **Operator**                           | **Precedence** | **Associativity**  |
+|----------------------------------------|----------------|--------------------|
+| **Parentheses** `()`                   | 1              | Left to Right      |
+| **Exponentiation** `**`                | 2              | Right to Left      |
+| **Unary Plus/Minus** `+x, -x`          | 3              | Left to Right      |
+| **Multiplication/Division** `*, /, //, %` | 4              | Left to Right      |
+| **Addition/Subtraction** `+, -`        | 5              | Left to Right      |
+| **Bitwise Shift** `<<, >>`             | 6              | Left to Right      |
+| **Bitwise AND** `&`                    | 7              | Left to Right      |
+| **Bitwise XOR** `^`                    | 8              | Left to Right      |
+| **Bitwise OR** `|`                     | 9              | Left to Right      |
+| **Comparison** `==, !=, >, >=, <, <=`  | 10             | Left to Right      |
+| **Identity** `is, is not`              | 11             | Left to Right      |
+| **Membership** `in, not in`            | 12             | Left to Right      |
+| **Logical NOT** `not`                  | 13             | Right to Left      |
+| **Logical AND** `and`                  | 14             | Left to Right      |
+| **Logical OR** `or`                    | 15             | Left to Right      |
+| **Conditional Expression** `x if y else z` | 16             | Right to Left      |
+| **Assignment** `=, +=, -=, *=, /=, etc.` | 17             | Right to Left      |
+| **Lambda** `lambda`                    | 18             | Right to Left      |

@@ -1,0 +1,74 @@
+**Short Notes on Python Loops (with `range`)**
+
+1. **`for` Loop**:  
+   - Iterates over a sequence (list, tuple, string, etc.).
+   - Syntax:
+     ```python
+     for item in sequence:
+         # code
+     ```
+
+2. **`while` Loop**:  
+   - Repeats as long as the condition is true.
+   - Syntax:
+     ```python
+     while condition:
+         # code
+     ```
+
+3. **`break` Statement**:  
+   - Exits the loop prematurely.
+   - Syntax:
+     ```python
+     break
+     ```
+
+4. **`continue` Statement**:  
+   - Skips the current iteration and continues with the next one.
+   - Syntax:
+     ```python
+     continue
+     ```
+
+5. **`else` with Loops**:  
+   - Executes when the loop ends without a `break`.
+   - Syntax:
+     ```python
+     for item in sequence:
+         # code
+     else:
+         # code
+     ```
+
+6. **Nested Loops**:  
+   - A loop inside another loop.
+   - Syntax:
+     ```python
+     for i in range(3):
+         for j in range(3):
+             # code
+     ```
+
+7. **`range()` Function**:  
+   - Generates a sequence of numbers for iteration (commonly used in `for` loops).
+   - Syntax:
+     ```python
+     range(start, stop, step)
+     ```
+   - **`start`** (optional): The starting value (default is 0).
+   - **`stop`**: The end value (not included in the sequence).
+   - **`step`** (optional): The increment (default is 1).
+   - Example:
+     ```python
+     for i in range(0, 10, 2):
+         # i takes values: 0, 2, 4, 6, 8
+     ```
+
+---
+
+### Key Points:
+- **`for`** is used for iterating over sequences (or `range()`).
+- **`while`** runs as long as the condition is true.
+- **`break`** stops the loop early, while **`continue`** skips to the next iteration.
+- **`else`** runs after a loop finishes unless interrupted by `break`.
+- **`range()`** creates a sequence of numbers for iteration, commonly used with `for` loops.
