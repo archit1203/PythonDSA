@@ -5,36 +5,54 @@ class Node:
         self.key=k
         self.next=None
 
-class stack:
-    def __init__(self):
-        self.head=None
-        self.size=0
+class twostack:
+    def __init__(self,n):
+        self.size=n
+        self.arr=[None]*n
+        self.top1=-1
+        self.top2=self.size
     
-    def push(self,k):
-        temp=Node(k)
-        temp.next=self.head
-        self.head=temp
-        self.size=self.size+1
+    def push1(self,k):
+        if self.top1<self.top2-1:
+            self.top1+=1
+            self.arr[self.top1]=k
+            return True
+        return False
 
-    def size(self):
-        return self.size
+    def push2(self,k):
+        if self.top1<self.top2-1:
+            self.top2-=1
+            self.arr[self.top2]=k
+            return True
+        return False
 
+    def size1(self):
+        return self.top1+1
+
+    def size2(self):
+        return self.size-self.top2
+    
     def peek(self):
         if self.head==None:
             return math.inf
         return self.head.key
     
-    def pop(self):
-        if self.head==None:
-            return math.inf
-        res=self.head.key
-        self.head=self.head.next
-        self.size=self.size-1
-        return res
+    def pop1(self):
+        if self.top1>=0:
+            x=self.arr[self.top1]
+            self.top1=self.top1-1
+            return x
+        return None
     
+    def pop2(self):
+        if self.top2<self.size:
+            x=self.arr[self.top2]
+            self.top2=self.top2+1
+            return x
+        return None
 
 
-s=stack()
-s.push(10)
-s.push(20)
-print(s.pop())
+s=twostack(5)
+s.push1(10)
+s.push2(70)
+print(s.pop1())
