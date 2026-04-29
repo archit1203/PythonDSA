@@ -1,0 +1,159 @@
+		<h1>Python : Basics</h1>
+
+=><h3>Data Types in Python:</b3>
+	Data Types are classifications of data that define what operations can be performed on the data. Python offers several built-in data types:
+
+1. Numbers: 
+   - Integers: Whole numbers, positive or negative, with no decimal point.
+   - Floating Point Numbers: Numbers with a fractional part (decimal point), up to 15 digits of precision.
+   - Complex Numbers: Numbers with a real part and an imaginary part (e.g., x + yj).
+
+2. Strings: Sequences of characters enclosed in quotes.
+
+3. Boolean Values: Represent `True` or `False`.
+
+4. List, Tuple, and Dictionary: Collection data types for holding multiple values.
+
+=>**Variable Reassignment**: Variables can be reassigned to different data types, like:
+   - `a = "Raw"` (String)
+   - `a = 10` (Integer)
+   - `a = 5.6` (Floating-point)
+   - `a = 1+8j` (Complex number)
+   - `a = True` (Boolean)
+
+---
+
+### Introduction to Python Numbers
+
+Python supports three types of numeric data:
+
+1. **Integers (`int`)**: Whole numbers with no decimal, size is only limited by memory.
+2. **Floating-point numbers (`float`)**: Numbers with decimal points, precision up to 15 digits.
+3. **Complex numbers (`complex`)**: Numbers of the form `x + yj`, where `x` is the real part and `y` is the imaginary part.
+
+You can check a variable’s data type using `type()`, and check its class using `isinstance()`:
+
+```python
+b = 5 
+print(b, "is of type", type(b)) 
+b = 2.0 
+print(b, "is of type", type(b)) 
+b = 1+2j 
+print(b, "is complex number?", isinstance(b, complex))
+```
+
+**Example Output**:
+- `5 is of type <class 'int'>`
+- `2.0 is of type <class 'float'>`
+- `1+2j is complex number? True`
+
+
+
+### <h3>Memory Representation of Variables</h3>
+
+- **Traditional Languages (C, C++, Java)**: 
+  - Variables are like storage containers with fixed memory locations. When a variable is reassigned a new value, the value is updated at the same memory location.
+  
+- **Python Variables**:
+  - Python variables do not have fixed memory locations. Each time a value changes, the variable points to a different memory location.
+  - Python uses memory areas for common values, storing them at unique addresses.
+  - When a variable is created, it points to the memory location of a value. If the value changes, the variable points to a new location.
+  - Each object has a unique ID in memory, which can be checked using the `id()` function.
+
+**Example**:
+```python
+a = 5
+b = 10
+print(id(a))  # Unique memory ID for "a"
+print(id(b))  # Unique memory ID for "b"
+```
+
+**Output**:
+```
+4425656800
+4425656960
+```
+
+
+=>### <h3>Scope of Variables</h3>
+
+- **Scope**: The part of a program where a variable is accessible. A variable is only visible within its scope.
+
+- **Types of Scope**:
+  - **Global Scope**: A variable declared at the top level (outside any function) is global and accessible throughout the program.
+  - **Local Scope**: A variable declared within a function is local to that function and not accessible outside it.
+
+===>- **<b>Global Variable</b>**: A variable declared outside any function can be accessed from anywhere in the program, including inside functions.
+
+**Example**:
+```python
+x = "Global Variable"
+def foo():
+    print("Value of x: ", x)
+foo()
+```
+Output: `Global Variable`
+
+- **Modifying Global Variable Inside a Function**: 
+  - If you try to modify a global variable inside a function without declaring it as `global`, Python treats it as a local variable, causing an error.
+  
+**Example**:
+```python
+x = "Global Variable"
+def foo():
+    x = x - 1  # Causes error
+    print("Value of x: ", x)
+foo()
+```
+Output: `UnboundLocalError: local variable 'x' referenced before assignment`
+
+
+
+### <b>Local Scope</b>
+
+- **Local Variables**: Defined inside a function, accessible only within that function.
+
+**Example**:
+```python
+def func():
+    name = "Shivam Kumar Singh"
+    print(name)
+
+func()  # Output: Shivam Kumar Singh
+```
+
+- **Accessing Local Variable Outside Its Scope**:  
+  Local variables cannot be accessed outside the function where they are defined.
+
+**Example**:
+```python
+def func():
+    name = "Shivam Kumar Singh"
+
+func()
+print(name)  # Output: NameError: name 'name' is not defined
+```
+
+- **Lifetime of Variables**:
+  - **Global Variable**: Exists as long as the program runs.
+  - **Local Variable**: Exists only during the function execution.
+
+### <h3>Global vs Local Variable with the Same Name</h3>
+
+- **Same Name in Both Scopes**: A variable with the same name can exist in both global and local scopes. They are treated as separate variables.
+
+**Example**:
+```python
+val = 1
+def func():
+    val = 50
+    print("Value of Local variable:", val)
+
+func() 
+print("Value of Global Variable:", val)
+```
+- **Output**:
+  - Local variable inside `func()`: `50`
+  - Global variable outside `func()`: `1`
+
+- **Conclusion**: The local variable `val` inside the function shadows the global variable `val` within the function scope. Outside the function, the global variable remains unchanged.
