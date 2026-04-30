@@ -5,7 +5,7 @@
 #         self.next = None
 
 class Solution:
-    def detectCycle(self, head) :
+    def detectCycle(self, head) : 
         s=head
         f=head
 
