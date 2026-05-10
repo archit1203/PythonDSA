@@ -14,6 +14,12 @@ Applications
 Synchronisation
 OS
 Computer Network
+
+Queue in Python
+list
+Collections.deque
+queue.Queue
+Own implementation
 """
 
 
