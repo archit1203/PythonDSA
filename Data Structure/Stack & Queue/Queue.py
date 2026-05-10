@@ -18,8 +18,22 @@ Computer Network
 Queue in Python
 list
 Collections.deque
-queue.Queue
+queue.Queue -> multithreaded enviornment
 Own implementation
 """
+
+
+#Using List
+q=[]
+
+q.append(10)
+q.append(20)
+q.append(30)
+
+print(q)
+print(q.pop())
+
+q.append(40)
+print(q.pop())
 
 
