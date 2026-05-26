@@ -25,3 +25,28 @@ class Solution:
                         ans.append(-1)
         return ans
 """
+
+"""
+Solution 2
+
+class Solution:
+    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        n1=len(nums1)
+        n2=len(nums2)
+
+        ans=dict()
+
+        for i in range(n2):
+            ans[nums2[i]]=-1
+            for j in range(i+1,n2):
+                if nums2[j]>nums2[i]:
+                    ans[nums2[i]]=nums2[j]
+                    break
+
+        res=[]
+        for i in range(n1):
+            if nums1[i] in ans:
+                res.append(ans[nums1[i]])
+        
+        return res
+"""
