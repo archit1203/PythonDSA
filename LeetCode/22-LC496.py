@@ -1,3 +1,5 @@
+"""
+
 class Solution:
    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
 
@@ -22,3 +24,4 @@ class Solution:
                     if flag!=1:
                         ans.append(-1)
         return ans
+"""
